@@ -1,10 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import { SOME_MODULE } from '../modules/some-module/router/index'
-import EXTERNAL from '../../external-modules';
-
-const EXTERNAL_MODULES = Object.values(EXTERNAL) ?? []
-console.log({ EXTERNAL, EXTERNAL_MODULES });
+import { EXTERNAL_MODULES } from '../load-external-modules';
 
 const routes = [
   {
